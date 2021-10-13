@@ -4,7 +4,7 @@ class Solution:
             return a[0]
         return sorted(intervals, key=sortFn)
 
-    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+    def merge(self, intervals):
         if len(intervals) == 1:
             return intervals
         a = self.sortIntervals(intervals)
